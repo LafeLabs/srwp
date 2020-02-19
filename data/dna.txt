@@ -1,0 +1,20 @@
+{
+    "html": [
+        "README.md",
+        "index.html",
+        "scroll.html"
+    ],
+    "javascript": [],
+    "iconsymbols": [],
+    "data": [
+        "dna.txt"
+    ],
+    "php": [
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ]
+}
