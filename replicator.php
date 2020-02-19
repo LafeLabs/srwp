@@ -1,5 +1,5 @@
 <?php
-
+//replcace the following url with your local data/dna.txt file's global url:
 $dnaurl = "https://raw.githubusercontent.com/LafeLabs/srwp/master/data/dna.txt";
 $baseurl = explode("data/",$dnaurl)[0];
 $dnaraw = file_get_contents($dnaurl);
@@ -7,13 +7,6 @@ $dna = json_decode($dnaraw);
 
 mkdir("data");
 mkdir("php");
-
-
-$oldscrollexists = false;
-if(file_exists("README.md")){
-    $README = file_get_contents("README.md");
-    $oldscrollexists = true;
-}
 
 
 foreach($dna->html as $value){

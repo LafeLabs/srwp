@@ -4,8 +4,6 @@
         "index.html",
         "scroll.html"
     ],
-    "javascript": [],
-    "iconsymbols": [],
     "data": [
         "dna.txt"
     ],

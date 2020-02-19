@@ -3,7 +3,6 @@
     <head>
      <meta charset="utf-8"/>
 
-
 <!-- 
 
 showdown is a javascript library which converts markdown to html.
@@ -14,30 +13,23 @@ Markdown is a lightweight language for creating formatted text on a computer, se
 
 https://en.wikipedia.org/wiki/Markdown
 
-bootstrap is whole big thing that does lots of things, but what we use it for here is just to make things look good on a mobile device. 
 
 -->
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.js"></script>
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
     </head>
 <body>
     
-<div class = "mainscrollarea" id = "scrollscroll"></div>
-
+<div id = "scrollscroll"></div>
 
 
 <script>
 
     
     //get readme.md, convert to html and display
+    
     var converter = new showdown.Converter();
     // for more on options see here:
     // https://github.com/showdownjs/showdown/wiki/Showdown-Options
-    converter.setOption('literalMidWordUnderscores', 'true');
-    converter.setOption('tables', 'true');
-
 
     readme_md = "";
     rawhtml = "";
@@ -57,53 +49,22 @@ bootstrap is whole big thing that does lots of things, but what we use it for he
     body{
         overflow:hidden;
     }
-    .mainscrollarea{
+    h1,h2,h3,h4{
+        margin:auto;
+        text-align:center;
+    }
+    #scrollscroll{
         position:absolute;
         left:0px;
         right:0px;
         top:0px;
         bottom:0px;
-    }
-    #scrollscroll{
         overflow:scroll;
-        border-right:solid;
-        border-width:0.1px;
-        border-color:red;
         padding-left:1em;
         padding-right:1em;
         padding-bottom:5em;
     }
-    #scrollscroll img{
-        max-width:80%;
-        display:block;
-        margin:auto;
-    }
-    #scrollscroll h1,h2,h3,h4{
-        margin:auto;
-        text-align:center;
-    }
-    @media only screen and (orientation: portrait) {
-        .mainscrollarea{
-            position:absolute;
-            left:0px;
-            top:70px;
-            right:0px;
-            bottom:0px;
-            font-size:3em;
-        }
-        h1{
-            font-size:1.5em;
-        }
-        h2{
-            font-size:1.25em;
-        }
-        h3{
-            font-size:1em;
-        }
-        h4{
-            font-size:0.8em;
-        }
-    }
+    
 </style>
 </body>
 </html>

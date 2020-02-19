@@ -88,30 +88,15 @@ for(var index = 0;index < files.length;index++){
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
         httpc.send();
-        if(this.classList[0] == "css"){
-            editor.getSession().setMode("ace/mode/css");
-            document.getElementById("namediv").style.color = "yellow";
-            document.getElementById("namediv").style.borderColor = "yellow";
-        }
         if(this.classList[0] == "html"){
             editor.getSession().setMode("ace/mode/html");
             document.getElementById("namediv").style.color = "#0000ff";
             document.getElementById("namediv").style.borderColor = "#0000ff";
         }
-        if(this.classList[0] == "scrolls"){
-            editor.getSession().setMode("ace/mode/html");
-            document.getElementById("namediv").style.color = "#87CEEB";
-            document.getElementById("namediv").style.borderColor = "#87CEEB";
-        }
         if(this.classList[0] == "javascript"){
             editor.getSession().setMode("ace/mode/javascript");
             document.getElementById("namediv").style.color = "#ff0000";
             document.getElementById("namediv").style.borderColor = "#ff0000";
-        }
-        if(this.classList[0] == "bytecode"){
-            editor.getSession().setMode("ace/mode/text");
-            document.getElementById("namediv").style.color = "#654321";
-            document.getElementById("namediv").style.borderColor = "#654321";
         }
         if(this.classList[0] == "php"){
             editor.getSession().setMode("ace/mode/php");
