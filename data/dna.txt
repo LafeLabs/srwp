@@ -6,7 +6,8 @@
         "scroll.html"
     ],
     "data": [
-        "dna.txt"
+        "dna.txt",
+        "dnasource.txt"
     ],
     "php": [
         "dir.txt",

@@ -53,9 +53,17 @@ EGO DEATH:
 
     foreach($datafiles as $value){
         if($value{0} != "."){
-            echo "<div class = \"javascript file\">data/";
-            echo $value;
-            echo "</div>\n";
+            
+            if($value == "dnasource.txt"){
+                echo "<div class = \"bytecode file\">data/";
+                echo $value;
+                echo "</div>\n";
+            }
+            else{
+                echo "<div class = \"javascript file\">data/";
+                echo $value;
+                echo "</div>\n";
+            }
         }
     }
 
@@ -116,7 +124,11 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "aqua";
             document.getElementById("namediv").style.borderColor = "aqua";
         }
-
+        if(this.classList[0] == "bytecode"){
+            editor.getSession().setMode("ace/mode/text");
+            document.getElementById("namediv").style.color = "#654321";
+            document.getElementById("namediv").style.borderColor = "#654321";
+        }
         document.getElementById("namediv").innerHTML = currentFile;
     }
 }
