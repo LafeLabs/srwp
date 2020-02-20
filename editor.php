@@ -24,6 +24,7 @@ EGO DEATH:
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.html">index.html</a>
+    <a href = "fork.html">fork.html</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
 </div>
 <div id = "namediv"></div>
@@ -31,7 +32,9 @@ EGO DEATH:
 <div id = "filescroll">
 
     <div class = "html file">index.html</div>
+    <div class = "html file">fork.html</div>
     <div class = "markdown file">README.md</div>
+    
 
 <?php 
 

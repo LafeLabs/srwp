@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "fork.html",
         "index.html",
         "scroll.html"
     ],
@@ -8,10 +9,13 @@
         "dna.txt"
     ],
     "php": [
+        "dir.txt",
         "dnagenerator.txt",
         "editor.txt",
         "fileloader.txt",
         "filesaver.txt",
+        "mkdir.txt",
+        "rdelete.txt",
         "replicator.txt",
         "text2php.txt"
     ]
