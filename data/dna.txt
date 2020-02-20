@@ -2,8 +2,7 @@
     "html": [
         "README.md",
         "fork.html",
-        "index.html",
-        "scroll.html"
+        "index.html"
     ],
     "data": [
         "dna.txt",
