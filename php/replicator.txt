@@ -20,10 +20,22 @@ foreach($dna->html as $value){
     copy($baseurl.$value,$value);
 }
 
+
+$olddnasourceexists = false;
+
+if(file_exists("data/dnasource.txt")){
+    $olddnasource = file_get_contents("data/dnasource.txt");
+    $olddnasourceexists = true;
+}
+
+
 foreach($dna->data as $value){
     
     copy($baseurl."data/".$value,"data/".$value);
     
+}
+if($olddnasourceexists){
+    file_put_contents("data/dnasource.txt",$olddnasource);
 }
 
 foreach($dna->php as $value){
