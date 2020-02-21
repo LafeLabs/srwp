@@ -1,7 +1,15 @@
 <?php
 //replcace the following url with your local data/dna.txt file's global url:
-//$dnaurl = "https://raw.githubusercontent.com/LafeLabs/srwp/master/data/dna.txt";
-$dnaurl = file_get_contents("data/dnasource.txt");
+
+$olddnasourceexists = false;
+if(file_exists("data/dnasource.txt")){
+    $dnaurl = file_get_contents("data/dnasource.txt");
+    $olddnasourceexists = true;
+}
+else{
+    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/srwp/master/data/dna.txt";
+}
+
 $baseurl = explode("data/",$dnaurl)[0];
 $dnaraw = file_get_contents($dnaurl);
 $dna = json_decode($dnaraw);
@@ -14,10 +22,16 @@ foreach($dna->html as $value){
     copy($baseurl.$value,$value);
 }
 
+
+
 foreach($dna->data as $value){
     
     copy($baseurl."data/".$value,"data/".$value);
     
+}
+
+if($olddnasourceexists){
+    file_put_contents("data/dnasource.txt",$dnaurl);
 }
 
 foreach($dna->php as $value){
