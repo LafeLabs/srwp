@@ -53,7 +53,7 @@
 
 3. Decide what the purpose of your page is.  A page can be thought of as a generalized document which is a symbolic representation of an action, what is that action?  By default it's just replication of this page, but as with other generalized document preparation systems like the MS Office suit it can represent any action including learning and physical creation(instructions to make things).
 
-4. Spread links to your page in a physical space: encode the url on some kind of physical media and give it out to people located in a geography that makes sense relative to the domain(streets and water).  The minimal example is an index with the url written on it, handed to people while saying "self replicating web page".
+4. Spread links to your page in a physical space: encode the url on some kind of physical media and give it out to people located in a geography that makes sense relative to the domain(streets and water).  The minimal example is an index with the url written on it, handed to people while saying "self replicating web page", or sitting in a place with a sign that says the same.
 
 This system represents a generalized document which can replicate, spreading a generalized action.
 
