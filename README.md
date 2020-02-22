@@ -1,5 +1,47 @@
 # Self Replicating Web Page
 
+## Internal links
+
+- [scrolleditor.html](scrolleditor.html)
+- [editor.php](editor.php)
+- [../](../)
+- [fork.html](fork.html)
+- [data/dna.txt](data/dna.txt)
+- [data/dnasource.txt](data/dnasource.txt)
+
+## External Links
+
+- [https://infinityfree.net/ free web hosting](https://infinityfree.net/)
+- [https://www.000webhost.com/ free web hosting](https://www.000webhost.com/)
+- [https://www.dreamhost.com/ paid hosting, cheap domain names](https://www.dreamhost.com/)
+
+## Code Structure
+
+    {
+    "html": [
+        "README.md",
+        "fork.html",
+        "index.html",
+        "scroll.html",
+        "scrolleditor.html"
+    ],
+    "data": [
+        "dna.txt",
+        "dnasource.txt"
+    ],
+    "php": [
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ]
+    }
+
 ## Replication instructions
 
 1. Get a new web host set up by either getting free web hosting on [https://infinityfree.net/](https://infinityfree.net/) or [https://www.000webhost.com/](https://www.000webhost.com/) or buying  a domain and getting paid hosting on [https://www.dreamhost.com/](https://www.dreamhost.com/) (code proven to work on Dreamhost), or [setting up a Raspberry Pi with Apache and php](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md).  Buy domains with non standard extensions like ".xyz", and make them specific to a physical place like name-of-river-banks.xyz and finding unused domains for a couple dollars becomes trivial.  Or replicate down in the directory tree here by using [fork.html](fork.html), entering the name of a new page, and clicking through to the replicator.  If you're adding a sub-page to this, you can back up to the previous level with [this link to ../](../).
