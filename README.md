@@ -68,25 +68,25 @@ This system represents a generalized document which can replicate, spreading a g
 
 ## Laws of the Network
 
-- EVERYTHING REPLICATES(replicator code and document)
-- EVERYTHING EVOLVES(any user on network can edit files on any node)
-- EVERYTHING DIES(any user can recursive delete any page on any node on any server)
+- EVERYTHING REPLICATES(every page contains replicator code to copy itself to anywhere else, to copy some other page it itself, and human instructions for copying the whole thing)
+- EVERYTHING EVOLVES(any user on network can any file on any node)
+- EVERYTHING DIES(any user can recursive-delete(rdelete.php) any page on any node on any server)
 - EVERYTHING IS FRACTAL(any user can fork any page)
 - EVERYTHING IS RECURSIVE(self-edit capability of all files including editors)
 - NO MONEY(this network has no "security" and should never have any information exchange with the commercial Internet)
 - NO PROPERTY(all information is replicated and deleted by default, there can be no "property" of any kind in such a network)
 - NO PASSWORDS(the power of the network is derived from all users having access to all nodes at the same time, this is impossible without totally unrestricted access)
 - NO LOGINS(see above)
-- NO NAMES(An link to an individual can put that person at risk and should be avoided. Names are not replaced by  
-- NO IDENTITY
-- NO DATABASES
-- NO CORPORATE STRUCTURE
-- NO EMPLOYEES
-- NO FIXED CENTRALIZED DOMAIN NAMES
-- NO COMMAND LINE INSTALLS ON SERVER
-- NO NATIVE APPS OR NATIVE CODE OF ANY KIND
-- ANY NODE CAN REPLICATE SOURCE FROM ANY OTHER NODE
-
+- NO NAMES(An link to an individual can put that person at risk and should be avoided. You can't dox an egoless mind)
+- NO IDENTITY(We do not replace names by pseudonyms, there truly is no identity)
+- NO DATABASES(Databases are for private property and restrict the free open flow of information, we do not use them ever for any reason)
+- NO CORPORATE STRUCTURE(corporations provide a target for lawsuits and regulation, in order for social structures of the Free Web to be robust they must be immune to such attacks and avoid all structures in the existing corporate legal order)
+- NO EMPLOYEES(see above)
+- NO FIXED CENTRALIZED DOMAIN NAMES(domain names are legal property.  We need them to start the network, but we deliberately choose them to be disposable, favoring .xyz domains and weird spellings to avoid conflict with the commercial Internet)
+- NO COMMAND LINE INSTALLS ON SERVER(Servers are all treated as identical, running only simple php on the server side and saving data in human readable format, JSON by default)
+- NO NATIVE APPS OR NATIVE CODE OF ANY KIND(native apps deliberately break the free flow of information and have to get past the gatekeepers of the computer industry(Apple, Microsoft, Google). We refuse to engage this system in any way other than using web browsers, and we avoid ever using Chrome for development to prevent Google from breaking the Open Web)
+- ANY NODE CAN REPLICATE SOURCE FROM ANY OTHER NODE(Without the potential for totally free and instantaneous replication of code from any node to any other node we break the basic paradigm of the Free Web, and this must remain open without exception)
+- FROM EACH ACCORDING TO THEIR DESIRE TO EACH ACCORDING TO THEIR DESIRE(we create things and replicate things based on an actual intention of some kind, not arbitrary rules created by a central authority.  In order for a thing to replicate, however, someone has to take positive action, requiring consent of the future replicators for a thing to replicate.  Desire is thus transmitted through the Free Network via Intent and Consent.)
 
 
 
