@@ -2,12 +2,14 @@
 
 ## Internal links
 
-- [scrolleditor.html](scrolleditor.html)
-- [editor.php](editor.php)
-- [../](../)
-- [fork.html](fork.html)
-- [data/dna.txt](data/dna.txt)
-- [data/dnasource.txt](data/dnasource.txt)
+- [scrolleditor.html(edit README file)](scrolleditor.html)
+- [scroll.html(view README file)](scroll.html)
+- [index.html(main page)](index.html)
+- [editor.php(code editor)](editor.php)
+- [../(link up a level from this page)](../)
+- [fork.html(create and delete pages below this one)](fork.html)
+- [data/dna.txt(list of files to replicate)](data/dna.txt)
+- [data/dnasource.txt(global web address of files to replicate)](data/dnasource.txt)
 - [replicator.php code](php/replicator.txt)
 
 ## External Links
@@ -58,7 +60,32 @@ This system represents a generalized document which can replicate, spreading a g
 
 ## Evolution of System
 
-- 
+- The simplest evolution of a page is just editing the README file or scroll to change what action the page is replicating
+- The code editor can be used to edit the main page index.html to do *anything*: computation, communication, complex web based document creation, networking of all kinds
+- The code editor can also be used to bootstrap the complexity of the system, using editor.php to add files to edit, editing the files, and hence adding arbitrary files in both client side javascript and php server side(never server side js). Also, the whole system can be cloned to the command line with php, edited, pushed to a github repo, then replicated from the raw code there.  All code can interact with local data in the data/ directory, which all other code on the Network can access
+- Any node on the Network can take as its replication source any other node.  So if the Network has N nodes, the number of information flow configurations is N to the power of N. Any server can easily have 100's of nodes, and there can easily be multiple servers per person given existing scale of Internet-compatible hardware.  It is therefore conservative to estimate a minimum of 100 nodes per user. A network with 100 users thus has N of 10,000.  The size of the replication flow space is therefore on the order of 10,000 to the power of 10,000.  This is much larger than the estimated number of protons in the known universe, making it totally incomputable via classical computers.  If each node is carrying out computation using both client side and server side actions, and sharing with all other nodes in real time, all guided by the clicks of the users, who are interacting with multiple nodes simultaneously, the total computational power exceeds that of what is classically accessible in a way that is analogous to a quantum computer.
+- Since the power of the Network comes from how closely users interact as well as the skill of the users in manipulating the machines, social structures must be formed which both recruit users and train them to become experts in control of these systems.  Specialization within these social structures will allow for 
+
+## Laws of the Network
+
+- EVERYTHING REPLICATES(replicator code and document)
+- EVERYTHING EVOLVES(any user on network can edit files on any node)
+- EVERYTHING DIES(any user can recursive delete any page on any node on any server)
+- EVERYTHING IS FRACTAL(any user can fork any page)
+- EVERYTHING IS RECURSIVE(self-edit capability of all files including editors)
+- NO MONEY(this network has no "security" and should never have any information exchange with the commercial Internet)
+- NO PROPERTY(all information is replicated and deleted by default, there can be no "property" of any kind in such a network)
+- NO PASSWORDS(the power of the network is derived from all users having access to all nodes at the same time, this is impossible without totally unrestricted access)
+- NO LOGINS(see above)
+- NO NAMES(An link to an individual can put that person at risk and should be avoided. Names are not replaced by  
+- NO IDENTITY
+- NO DATABASES
+- NO CORPORATE STRUCTURE
+- NO EMPLOYEES
+- NO FIXED CENTRALIZED DOMAIN NAMES
+- NO COMMAND LINE INSTALLS ON SERVER
+- NO NATIVE APPS OR NATIVE CODE OF ANY KIND
+- ANY NODE CAN REPLICATE SOURCE FROM ANY OTHER NODE
 
 
 
