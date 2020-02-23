@@ -2,21 +2,31 @@
 
 ## Internal links
 
-- [scrolleditor.html(edit README file)](scrolleditor.html)
-- [scroll.html(view README file)](scroll.html)
-- [index.html(main page)](index.html)
-- [editor.php(code editor)](editor.php)
-- [../(link up a level from this page)](../)
-- [fork.html(create and delete pages below this one)](fork.html)
-- [data/dna.txt(list of files to replicate)](data/dna.txt)
-- [data/dnasource.txt(global web address of files to replicate)](data/dnasource.txt)
-- [replicator.php code](php/replicator.txt)
+[scrolleditor.html(edit README file)](scrolleditor.html)
+
+[scroll.html(view README file)](scroll.html)
+
+[index.html(main page)](index.html)
+
+[editor.php(code editor)](editor.php)
+
+[../(link up a level from this page)](../)
+
+[fork.html(create and delete pages below this one)](fork.html)
+
+[data/dna.txt(list of files to replicate)](data/dna.txt)
+
+[data/dnasource.txt(global web address of files to replicate)](data/dnasource.txt)
+
+[replicator.php code](php/replicator.txt)
 
 ## External Links
 
-- [https://infinityfree.net/ free web hosting](https://infinityfree.net/)
-- [https://www.000webhost.com/ free web hosting](https://www.000webhost.com/)
-- [https://www.dreamhost.com/ paid hosting, cheap domain names](https://www.dreamhost.com/)
+[https://infinityfree.net/ free web hosting](https://infinityfree.net/)
+
+[https://www.000webhost.com/ free web hosting](https://www.000webhost.com/)
+
+[https://www.dreamhost.com/ paid hosting, cheap domain names](https://www.dreamhost.com/)
 
 ## Code Structure(from dna.txt)
 
