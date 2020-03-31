@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "calculator.html",
         "fork.html",
         "index.html",
         "scroll.html",

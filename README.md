@@ -14,7 +14,33 @@ But how does the host reproduce?  If memes on social media are like viral inform
 
 What is presented here is another type of self-replicating information: social media which can replicate from one web host to another, without a company, without employees, without a centralized code base.  Code can be modified in situ on each web server that hosts the code, then when another server is seeded from that code it replicates that new instance.  Rather than discuss the theory of this in detail, I will dive in and take the reader through a full cycle of replication and evolution, then discuss the implications in the conclusion.  
 
-The basis of self-replicating web code is the fact that a large fraction of web servers run php scripts by default.  The whole self-repicating web page instance can consist of a collection of files of all sorts of formats such as html, php, javascript, JSON, images etc., all of which are copied using a script called replicator.php.  Replicator points to a JSON file called dna.txt which lists all the files that are getting copied. 
+The basis of self-replicating web code is the fact that a large fraction of web servers run php scripts by default.  The whole self-repicating web page instance can consist of a collection of files of all sorts of formats such as html, php, javascript, JSON, images etc., all of which are copied using a script called replicator.php.  Replicator points to a JSON file called dna.txt which lists all the files that are getting copied. Another php script called dnagenerator.php scans all the files and creates the dna.txt file as the files change.  All of the files can be edited on the server using editor.php.  Editor.php 
+
+## php scripts:
+
+ - editor.php
+ - filesaver.php
+ - fileloader.php
+ - dnagenerator.php
+ - mkdir.php
+ - rdelete.php
+ - text2php.php
+ - replicator.php
+
+## html pages:
+
+ - index.html
+ - fork.html
+ - scroll.html
+ - scrolleditor.html
+ - calculator.html
+
+## Other files:
+
+ - README.md
+ - dna.txt
+ - dnasource.txt
+
 
 
 
