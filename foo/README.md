@@ -1,23 +1,4 @@
-# Self-replicating web pages
-
-
-## Abstract
-
-Self-replication has been an obsession in technology since Von Neumann contemplated such devices at the dawn of the information age.  I describe, with links to code on Github, how to create a self-replicating web page which can spread with just a few keystrokes to any web server connected to the Internet.  A single php script called replicator.php fetches all the files using a JSON file called dna.txt.  This system differs from a virus in that first of all it only propagates with consent of the user and second of all it copies a whole working system which can do useful things and does not just infect an existing host.   The newly replicated site can be edited in situ on the new host without any login credentials and then used as the source for the next instance, allowing it to evolve and grow in the “wild” of the Internet.
-
-## Author: Lafe Spietz
-## Spring 2020
-
-Viral media has become a part of our everyday lives, for better or worse. Both good ideas and bad ideas spread in ways which are a very strong analogy with biological viruses.  Viruses consist of information which can infect a host, causing that host to replicate the information.  It is controversial whether to call a virus an organism or not--they are simple code that hacks an existing life form and uses it to make copies. In the case of something like a conspiracy theory on Facebook, an infected host person posts a meme to their Facebook wall, other people see it, believe it, and decide to the post it to their wall, which Facebook displays in other users' feeds, and thus the information propagates both in the minds of the infected people and on the databases Facebook uses to keep track of such things.  
-
-But how does the host reproduce?  If memes on social media are like viral information infecting a host, what is the nature of that host as a life-like object?  Just like a human or a tree, social media platforms have a reproductive life cycle.  They produce vast amounts of money, much of which finds its way back into venture investments which go into new startup companies.  These companies spend money on network infrastructure and labor to build new software, and attempt to grow themselves into large enough organisms that they too can become static hosts of viral information.  
-
-What is presented here is another type of self-replicating information: social media which can replicate from one web host to another, without a company, without employees, without a centralized code base.  Code can be modified in situ on each web server that hosts the code, then when another server is seeded from that code it replicates that new instance.  Rather than discuss the theory of this in detail, I will dive in and take the reader through a full cycle of replication and evolution, then discuss the implications in the conclusion.  
-
-The basis of self-replicating web code is the fact that a large fraction of web servers run php scripts by default.  The whole self-repicating web page instance can consist of a collection of files of all sorts of formats such as html, php, javascript, JSON, images etc., all of which are copied using a script called replicator.php.  Replicator points to a JSON file called dna.txt which lists all the files that are getting copied. 
-
-
-
+# Self Replicating Web Page
 
 ## Internal links
 
