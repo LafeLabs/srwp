@@ -8,6 +8,8 @@ Self-replication has been an obsession in technology since Von Neumann contempla
 ## Author: Lafe Spietz
 ## Spring 2020
 
+## Introduction: viral vs. organic media
+
 Viral media has become a part of our everyday lives, for better or worse. Both good ideas and bad ideas spread in ways which are a very strong analogy with biological viruses.  Viruses consist of information which can infect a host, causing that host to replicate the information.  It is controversial whether to call a virus an organism or not--they are simple code that hacks an existing life form and uses it to make copies. In the case of something like a conspiracy theory on Facebook, an infected host person posts a meme to their Facebook wall, other people see it, believe it, and decide to the post it to their wall, which Facebook displays in other users' feeds, and thus the information propagates both in the minds of the infected people and on the databases Facebook uses to keep track of such things.  
 
 But how does the host reproduce?  If memes on social media are like viral information infecting a host, what is the nature of that host as a life-like object?  Just like a human or a tree, social media platforms have a reproductive life cycle.  They produce vast amounts of money, much of which finds its way back into venture investments which go into new startup companies.  These companies spend money on network infrastructure and labor to build new software, and attempt to grow themselves into large enough organisms that they too can become static hosts of viral information.  
@@ -16,9 +18,26 @@ What is presented here is another type of self-replicating information: social m
 
 The basis of self-replicating web code is the fact that a large fraction of web servers run php scripts by default.  The whole self-repicating web page instance can consist of a collection of files of all sorts of formats such as html, php, javascript, JSON, images etc., all of which are copied using a script called replicator.php.  Replicator points to a JSON file called dna.txt which lists all the files that are getting copied. Another php script called dnagenerator.php scans all the files and creates the dna.txt file as the files change.  All of the files can be edited on the server using editor.php.  Editor.php 
 
-## php scripts:
+Laws of the Organic Web:
 
- - editor.php
+- no native code(php for interaction with server side filesystem, everything else runs in browser client side)
+- no passwords or logins, any who can read data from any server can edit that data
+- everything can be copied by anyone who can connect to it
+- everything can be deleted by anyone on the network
+- everything can be edited by anyone on the network
+- no databases: files exist in a directory tree, and each branch in that tree can be replicated, forked or deleted at any time
+- each instance of the code is totally self-contained: the next instance can be copied from that instance with no reference to any centralized code repository.
+- editing is in situ on the server in a browser, not using code editing apps or IDE's
+- there is no private property in the organic web as that would hamper replication
+
+
+
+
+## Code Structure
+
+### php scripts:
+
+ - editor.php(note this uses the javascript library ace.js)
  - filesaver.php
  - fileloader.php
  - dnagenerator.php
@@ -27,7 +46,7 @@ The basis of self-replicating web code is the fact that a large fraction of web 
  - text2php.php
  - replicator.php
 
-## html pages:
+### html pages:
 
  - index.html
  - fork.html
@@ -35,14 +54,39 @@ The basis of self-replicating web code is the fact that a large fraction of web 
  - scrolleditor.html
  - calculator.html
 
-## Other files:
+### Other files:
 
  - README.md
  - dna.txt
  - dnasource.txt
 
+## Replication Path
+
+1. fork, then edit, then delete
+2. replicate to local hard drive, edit on localhost, push to github, replicate your code from there
+3. replicate onto free web host from your github
+4. replicate onto paid commercial web hosting
+5. replicate onto raspberry pi local server, set up for global access or not
+
+## The Transformative Potential of the Organic Web
+
+self-replicating documentation of self-replicating technology as a new economic system.  Value stored in the information of replication rather than in frozen value.  This can replace money in a society where value primarily replicates instead of being created linearly from mining and labor.
+
+apps in the OW can include:
+
+- math
+- commerce
+- culture
+- community building
+- art
+- documentation of self-replicating technology
 
 
+Building decentralized resilient networks on this model can be used to create networks of creation in societies targeted by violent networks.  Violent networks thrive in closed encrypted networks based on software like Telegram as well as centralized networks like Youtube and Twitter. Youtube's power comes from its monopoly(central control).  Telegrams power comes from its ability to hide(evade central control). A totally open network based on trust gets its resiliency from the constant upkeep as people delete bad information and replicate good information. 
+
+A sketch of the mathematics of the Organic Web as it scales.  10 billion human minds.  100 billion devices with < 10 Gbytes.  100,000 documents per human mind. By contrast there are only about 6 million wikipedia articles total.  A sketch of how complex the system can be of replication from files to files, since each page can be replicating from each other page, simply to write down the state of *just* replicator directions requires the number of pages to the power of the number of pages.  This vastly exceeds the number of protons in the Universe.  But each node can do computation and save the output of that computation and have human operators then replicate both the product of the computation and the computation code itself to any other page.  Thus the sum total of the Network of human minds editing the code and replicating it around can vastly exceed the theoretical maximum of a Turing machine.  This system holds the possibility of computation which exceeds in power that of classical computers in much the way the quantum computer does.
+
+Future work: find people to replicate, find reasons for them to do so.  Dreamers, organizers, hackers, coders, artists, leaders, writers, anyone who wants to win the hearts and minds of others...all these people can join this dream to create self-replicating media.
 
 
 ## Internal links
