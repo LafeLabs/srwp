@@ -18,7 +18,8 @@ What is presented here is another type of self-replicating information: social m
 
 The basis of self-replicating web code is the fact that a large fraction of web servers run php scripts by default.  The whole self-repicating web page instance can consist of a collection of files of all sorts of formats such as html, php, javascript, JSON, images etc., all of which are copied using a script called replicator.php.  Replicator points to a JSON file called dna.txt which lists all the files that are getting copied. Another php script called dnagenerator.php scans all the files and creates the dna.txt file as the files change.  All of the files can be edited on the server using editor.php.  Editor.php 
 
-Laws of the Organic Web:
+
+Principles of the Organic Web:
 
 - no native code(php for interaction with server side filesystem, everything else runs in browser client side)
 - no passwords or logins, any who can read data from any server can edit that data
@@ -37,18 +38,18 @@ Laws of the Organic Web:
 
 ### php scripts:
 
- - editor.php(note this uses the javascript library ace.js)
- - filesaver.php
- - fileloader.php
- - dnagenerator.php
- - mkdir.php
- - rdelete.php
- - text2php.php
- - replicator.php
+ - editor.php(in-browser editor which can edit all files. It uses the javascript library ace.js for syntax highlighting and the programs filesaver.php and fileloader.php to access the server side filesystem)
+ - filesaver.php(save file to serverside file system)
+ - fileloader.php(load file from serverside file system)
+ - dnagenerator.php(read the directories to gather the files to produce dna.txt file)
+ - mkdir.php(create a new directory on the server below the current one, and put a replicator.php script into it)
+ - rdelete.php(recursively delete a directory, removing all files and sub directories as well)
+ - text2php.php(php files are edited in raw text form, then are all copied to php using this script so that editor.php can edit itself without breaking itself)
+ - replicator.php(The script that replicates the whole system)
 
 ### html pages:
 
- - index.html
+ - index.html(by default this uses fileloader.php to fetch the README.md file, which it converts to html using the showdown.js javascript libary)
  - fork.html
  - scroll.html
  - scrolleditor.html
